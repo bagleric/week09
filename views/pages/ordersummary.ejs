@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>OrderSummary</h1> </div>
+      <h3>$<%=cost%></h3>
+      <h3>Weight: <%=weight%>oz.</h3>
+      <p>We're all done with your order!</p>
+    </div>
+    <div class="container">
+      <p>You processed a
+        <%= type %>, weighing
+          <%= weight %> oz.</p>
+      <p>Your total cost is $
+        <%= cost %>
+      </p>
+    </div>
+</body>
+
+</html>

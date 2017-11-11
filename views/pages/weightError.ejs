@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+  <% include ../partials/nav.ejs %>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <h1>Weight Problems</h1>
+        <p>Sorry, we think there's been a mistake.</p>
+        <h3><%=type%> weight:<%=weight%> </h3>
+        <h3>Max weight: <%=max%></h3>
+      </div>
+    </div>
+    <div class="container">
+      <p>You tried processing a
+        <%= type %> with a weight of
+          <%= weight %>oz. which doesn't allign with our weight and measurement standards. This type of mail only allows
+            <%=max%>oz.</p>
+      <p>Please go to the home page and try again.</p>
+    </div>
+</body>
+
+</html>
